@@ -1,3 +1,3 @@
-# DirectiveBypass
+# DirectoryBypass
 ## ИДЗ по КПО №2
 ## Нестеров Кирилл Валерьевич, БПИ-218
