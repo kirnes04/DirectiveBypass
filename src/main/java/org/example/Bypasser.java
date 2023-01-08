@@ -3,9 +3,19 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Bypasser class.
+ */
 public class Bypasser {
+    /**
+     * contains all the files.
+     */
     private static final List<String> allFiles = new ArrayList<>();
 
+    /**
+     * Bypasses the chosen directory.
+     * @param directory chosen directory.
+     */
     static void bypass(File directory) {
         File[] files = directory.listFiles();
 
@@ -22,6 +32,10 @@ public class Bypasser {
         }
     }
 
+    /**
+     * Property.
+     * @return allFiles.
+     */
     public static List<String> getAllFiles() {
         return allFiles;
     }

@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main() {
-        String initialDirectory = Menu.startingMenu();
+        String initialDirectory = Menu.printStartingMenu();
 
         try {
             File directory = new File(initialDirectory);
@@ -13,11 +13,13 @@ public class Main {
             Bypasser.bypass(directory);
             var files = Bypasser.getAllFiles().stream().sorted().toList();
 
-            String outputPath = Menu.outputPath();
+            String outputPath = Menu.scanOutputPath();
             File output = new File(outputPath);
 
             Writer writer = new Writer(output);
             writer.writeResult(files);
+
+            Menu.successfullyFinished();
         } catch (NullPointerException exception) {
             System.out.println("You've entered incorrect path.");
         } catch (SecurityException exception) {
