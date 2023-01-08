@@ -1,14 +1,30 @@
 package org.example;
 
-import java.io.File;
+import java.io.*;
 import java.util.List;
+import java.util.Scanner;
 
 public class Writer {
-    private File outputPath;
+    private final File outputPath;
     Writer(File output) {
         outputPath = output;
     }
 
-    void writeResult(List<String> files) {
+    void writeResult(List<String> files) throws IOException {
+        FileWriter fileWriter = new FileWriter(outputPath);
+
+        for (var file : files) {
+            FileReader fileReader = new FileReader(file);
+            Scanner scanner = new Scanner(fileReader);
+
+            while (scanner.hasNextLine()) {
+                fileWriter.write(scanner.nextLine() + '\n');
+            }
+
+            fileReader.close();
+            scanner.close();
+        }
+
+        fileWriter.close();
     }
 }
