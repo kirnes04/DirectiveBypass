@@ -6,12 +6,11 @@ import java.util.List;
 public class Bypasser {
     private static final List<String> allFiles = new ArrayList<>();
     static void bypass(File directory) {
-        String[] files = directory.list();
+        File[] files = directory.listFiles();
         if (files == null) {
             return;
         }
-        for (String s : files) {
-            File file = new File(s);
+        for (var file : files) {
             if (file.isDirectory()) {
                 bypass(file);
             } else {
@@ -20,7 +19,7 @@ public class Bypasser {
         }
     }
 
-    public List<String> getResult() {
+    public static List<String> getAllFiles() {
         return allFiles;
     }
 }

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81eb5eff-cad7-4e9a-9ffe-debdbace5ddd" name="Changes" comment="Added Bypasser class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Menu.java" afterDir="false" />
+    <list default="true" id="81eb5eff-cad7-4e9a-9ffe-debdbace5ddd" name="Changes" comment="Added Menu class and implemented logic of work">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Writer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Bypasser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Bypasser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673215205656</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Menu class and implemented logic of work">
+      <created>1673216576171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673216576171</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,6 +91,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added Bypasser class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Bypasser class" />
+    <MESSAGE value="Added Menu class and implemented logic of work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Menu class and implemented logic of work" />
   </component>
 </project>

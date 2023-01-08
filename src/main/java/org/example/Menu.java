@@ -9,4 +9,13 @@ public class Menu {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
+
+    static String outputPath() {
+        System.out.println("""
+                The program has scanned all the files in the entered directory.
+                Enter the path to the file, where you want the result to be printed.
+                """);
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
+    }
 }
